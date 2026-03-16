@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# Local data and generated outputs
+data/
+results/*
+!results/.gitkeep
+logs/
+archive/
+
+# Large local artifacts
+*.log
+*.zip
+
+# Notebook checkpoints
+.ipynb_checkpoints/

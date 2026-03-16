@@ -55,6 +55,16 @@ pip install -r requirements.txt
 
 ## Data Layout
 
+Source website: NCBI Gene Expression Omnibus (GEO).
+
+Dataset accession pages:
+
+- `GSE33000`: `https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE33000`
+- `GSE122063`: `https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE122063`
+- `GSE109887`: `https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109887`
+
+Download the required files from GEO and place them under a local `data/` directory.
+
 Create a local `data/` directory with the following structure:
 
 ```text
@@ -74,6 +84,11 @@ Expected external-validation files:
 - `geneMatrix.txt`
 - `s1.txt`
 - `s2.txt`
+
+Notes:
+
+- The repository uses local folder aliases `GSE33000mx`, `GSE122063yz1`, and `GSE109887yz2` for historical compatibility.
+- If the downloaded filenames differ from the names above, rename or preprocess them to match the expected layout before running the pipeline.
 
 After preprocessing, the training cohort will also contain:
 

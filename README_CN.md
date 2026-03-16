@@ -47,6 +47,16 @@ pip install -r requirements.txt
 
 ## 数据目录
 
+数据来源网站：NCBI Gene Expression Omnibus（GEO）。
+
+对应数据集页面：
+
+- `GSE33000`：`https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE33000`
+- `GSE122063`：`https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE122063`
+- `GSE109887`：`https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109887`
+
+请先从 GEO 下载所需文件，再按下面的本地目录结构放入 `data/` 目录。
+
 请在本地准备如下目录结构：
 
 ```text
@@ -66,6 +76,11 @@ data/
 - `geneMatrix.txt`
 - `s1.txt`
 - `s2.txt`
+
+补充说明：
+
+- 仓库中使用的本地目录名 `GSE33000mx`、`GSE122063yz1`、`GSE109887yz2` 是项目内部的历史命名。
+- 如果你从 GEO 下载后的文件名与项目要求不一致，需要先重命名或整理成项目要求的结构，再运行脚本。
 
 完成预处理后，训练集目录还会生成：
 
